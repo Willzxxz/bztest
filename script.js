@@ -3,14 +3,13 @@ let timeline = new TimelineMax();
 
 timeline
   .to(".sun", 20, { top: 50 }, "-=120")
+  .to(".sun", 50, { width: 1000, height: 1000}, "-=90")
+  .to(".sun", 40, { width: 1500, height: 1500}, "-=30")
   .to(".sun", 10, { top: -100 }, "-=65")
-  .to(".sun", 20, { width: 1000, height: 1000}, "-=90")
-  .to(".sun", 20, { width: 1500, height: 1500}, "-=70")
-  // .to(".sun", 20, { top: 30, left: 30}, "-=5")
-  .to(".terrain", 20, { y: 420 }, "-=84")
-  .to(".floor", 20, { y: 400 }, "-=83.5")
-  .to(".mountain", 20, { y: 440 }, "-=84.5")
-  .fromTo(".bg1", { y: -50 }, { y: 0, duration: 10 }, "-=10")
+  .to(".terrain", 70, { y: 420 }, "-=84")
+  .to(".floor", 70, { y: 380 }, "-=82")
+  .to(".mountain", 70, { y: 460 }, "-=86")
+  .fromTo(".bg1", { y: -50 }, { y: 0, duration: 1 }, "-=10")
   .to(".content", 30, { top: "0%" }, "-=1")
   
   .fromTo(".content-images", { opacity: 0 }, { opacity: 1, duration: 3 })
